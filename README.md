@@ -10,7 +10,8 @@ I stayed a long time in this, and it is very simple, but the verification to kno
 I checked the code in the app-ideas suggestions, and I need to dig deeper into the javascript
 
 ### Update 🌠
-I finally did it, i searched about arrow functions, split() and map(), and when I knew how it worked, it was magical 🎆, i understood how the code and logic worked. So, what i learned:
+I finally did it, i researched about arrow functions, split() and map(), and when I knew how it worked, it was magical 🎆, i understood how the code and logic worked. The only problem is break the map() whether the 'if' is true, i researched each(), but i still don't understand how it works 
+So, what i learned:
 - Basic Arrow Functions
 - .map()
 - .aplit()
