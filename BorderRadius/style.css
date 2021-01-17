@@ -1,5 +1,6 @@
 body {
     background-color: #222831;
+    height: 500px;
 }
 
 header {
@@ -78,5 +79,8 @@ header {
         text-align: center;
     }   
 
-
-
+    #container .clipboard {
+        position: relative;
+        top: 20px;
+        left: 80px;
+    }
