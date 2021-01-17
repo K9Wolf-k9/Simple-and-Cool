@@ -8,53 +8,75 @@ header {
     text-align: center;
 }
 
-#box {
+#container {
     position: relative;
+    width: 550px;
     margin: auto;
-    width: 450px;
-    height: 350px;
-    background: #393e46;
-    border: 2px solid #00adb5;
+    top: 20px;
+    left: 30px;
 }
+    #container .input_wrapper {
+        position: absolute;
+        width: 60px;
+        height: 100px;
+    }
+        #container .input_wrapper#tl {
+            top: -2px;
+            left: -80px;
+            text-align: right;
+        }
+        #container .input_wrapper#tr {
+            top: -2px;
+            left: 470px;
+            text-align: left;
+        }
+        #container .input_wrapper#br {
+            top: 254px;
+            left: 470px;
+            text-align: left;
+        }
+        #container .input_wrapper#bl {
+            top: 254px;
+            left: -80px;
+            text-align: right;
+        }
+        #container .input_wrapper input {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30px;
+        }
 
-#textBox {
-    position: relative;
-    margin-top: 50px;
-    margin-left: 50px;
-    width: 350px;
-    height: 250px;
-    background: #eeeeee;
+        #container .input_wrapper#tr input, #container .input_wrapper#br input {
+            text-align: left;
+            right: auto;
+            left: 0;
+        }
 
-    font-family: monospace;
-    font-size: 15px;
-    text-align: center;
-}
+        #container .input_wrapper#bl input, #container .input_wrapper#br input {
+            top: auto;
+            bottom: -1px;
+        }
 
-#btlr {
-    position: absolute;
-    width: 60px;
-    margin-left: 300px;
-}
+    #container #box {
+        width: 450px;
+        height: 350px;
+        background: #393e46;
+        border: 2px solid #00adb5;
+    }
 
-#btrr {
-    position: absolute;
-    width: 60px;
-    margin-left: 850px;
-}
+    #box #textBox {
+        position: relative;
+        margin-top: 50px;
+        margin-left: 50px;
+        width: 350px;
+        height: 250px;
+        background: #eeeeee;
 
-#bbrr {
-    position: absolute;
-    width: 60px;
-    margin-left: 850px;
-    margin-top: 333px;
-}
-
-#bblr {
-    position: absolute;
-    width: 60px;
-    margin-left: 300px;
-    margin-top: 333px;
-}
+        font-family: monospace;
+        font-size: 15px;
+        text-align: center;
+    }   
 
 
 
