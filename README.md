@@ -20,6 +20,7 @@ So, what i learned:
 - Binary numeral system
 
 ## Border-radius Previewer ⬜
-![BorderRadius](https://user-images.githubusercontent.com/63383435/103938835-a1709e80-5109-11eb-9e83-fbf4d81671b1.png)
+![BorderRadius](https://user-images.githubusercontent.com/63383435/104858345-16f42000-58fd-11eb-93b6-5849b9e093e8.png)
 
-I created the base and it is working, what is missing is to copy the properties to the clipboard and optimize the site, making it more flashy and clean 👍
+This is giving work, make the site easier for the user to click on the border change areas, and copy the properties, these two i need to study more, in addition to optimizing the code.
+I'll take a break from this project to think, study more JavaScript, and do other exercises so i don't get stuck in this. 🤔
