@@ -20,7 +20,17 @@ So, what i learned:
 - Binary numeral system
 
 ## Border-radius Previewer ⬜
-![BorderRadius](https://user-images.githubusercontent.com/63383435/104858345-16f42000-58fd-11eb-93b6-5849b9e093e8.png)
+![BorderRadius](https://user-images.githubusercontent.com/63383435/104866228-ca204180-591c-11eb-8266-ba9c9a66a188.png)
 
 This is giving work, make the site easier for the user to click on the border change areas, and copy the properties, these two i need to study more, in addition to optimizing the code.
 I'll take a break from this project to think, study more JavaScript, and do other exercises so i don't get stuck in this. 🤔
+
+### Update 🌠
+I couldn't wait another day and i didn't wait, this program was bothering my head, so i finnaly did it. I learned a lot of thing in this exercise, i research a lot and i couldn't sleep without copleting it
+
+So, what i learned:
+- CSS: Box Model
+- CSS: pseudo-class
+- Copy to Clipboard
+
+Now yes, i'll take a break from this project to study HTML,CSS,JavaScript, and study to further optimize the code.😌 
