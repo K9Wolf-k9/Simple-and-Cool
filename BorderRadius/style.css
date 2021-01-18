@@ -78,9 +78,23 @@ header {
         font-size: 15px;
         text-align: center;
     }   
-
-    #container .clipboard {
+        #box #textBox textarea {
+            width: 343px;
+            height: 244px;
+            resize: none;
+        }
+    
+    #container #button {
         position: relative;
         top: 20px;
-        left: 80px;
+        left: 160px;
+
+        background: #393e469a;
+        border: 2px solid #00adb5;
+        color: white;
     }
+        #container #button:hover {
+            border: 2px solid white;
+            cursor: pointer;
+        }
+        

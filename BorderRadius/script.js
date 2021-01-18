@@ -1,10 +1,16 @@
+// Global var
 var box = document.getElementById('box')
+var textArea = document.getElementById('code')
 
-// Change Border-Top-Left-Radius
-function changeBTLR(){
+function changeborder(){
+    textArea.innerHTML = ''
+
     var btlr = document.getElementById('btlr').value
-    var txt = document.getElementById('BTLRtxt')
+    var btrr = document.getElementById('btrr').value
+    var bbrr = document.getElementById('bbrr').value
+    var bblr = document.getElementById('bblr').value
 
+    // top left
     if (btlr === '')
     {
         btlr = 0
@@ -14,15 +20,7 @@ function changeBTLR(){
         btlr = 150
     }
 
-    txt.innerHTML = `border-top-left-radius = ${btlr}px`
-    box.style.borderTopLeftRadius = btlr + 'px'
-}
-
-// Change Border-Top-Right-Radius
-function changeBTRR(){
-    var btrr = document.getElementById('btrr').value
-    var txt = document.getElementById('BTRRtxt')
-
+    //top right
     if (btrr === '')
     {
         btrr = 0
@@ -32,15 +30,7 @@ function changeBTRR(){
         btrr = 150
     }
 
-    txt.innerHTML = `border-top-right-radius = ${btrr}px`
-    box.style.borderTopRightRadius = btrr + 'px'
-}
-
-// Change Border-Bottom-Right-Radius
-function changeBBRR(){
-    var bbrr = document.getElementById('bbrr').value
-    var txt = document.getElementById('BBRRtxt')
-
+    //bottom right
     if (bbrr === '')
     {
         bbrr = 0
@@ -50,15 +40,7 @@ function changeBBRR(){
         bbrr = 150
     }
 
-    txt.innerHTML = `border-bottom-right-radius = ${bbrr}px`
-    box.style.borderBottomRightRadius = bbrr + 'px'
-}
-
-// Change Border-Bottom-Left-Radius
-function changeBBLR(){
-    var bblr = document.getElementById('bblr').value
-    var txt = document.getElementById('BBLRtxt')
-
+    //bottom left
     if (bblr === '')
     {
         bblr = 0
@@ -68,12 +50,21 @@ function changeBBLR(){
         bblr = 150
     }
 
-    txt.innerHTML = `border-bottom-left-radius = ${bblr}px`
+    textArea.innerHTML += `border-top-left-radius = ${btlr}px \n\n`
+    box.style.borderTopLeftRadius = btlr + 'px'
+
+    textArea.innerHTML += `border-top-right-radius = ${btrr}px \n\n`
+    box.style.borderTopRightRadius = btrr + 'px'
+
+    textArea.innerHTML += `border-bottom-right-radius = ${bbrr}px \n\n`
+    box.style.borderBottomRightRadius = bbrr + 'px'
+
+    textArea.innerHTML += `border-bottom-left-radius = ${bblr}px`
     box.style.borderBottomLeftRadius = bblr + 'px'
 }
 
 function copy(){
-    var text = document.getElementById('copytxt')
+    var text = document.getElementById('code')
     
     text.select()
     text.setSelectionRange(0, 99999)

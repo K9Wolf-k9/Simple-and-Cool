@@ -6,34 +6,26 @@
     <title>Border-radius Previewer</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="changeborder()">
 
     <header>
         <h1>Border radius</h1>
     </header>
 
     <div id="container">
-        <div class="input_wrapper" id="tl"><input type="number" name="btlr" id="btlr" value="0" onkeyup="changeBTLR()"></div>
-        <div class="input_wrapper" id="tr"><input type="number" name="btrr" id="btrr" value="0" onkeyup="changeBTRR()"></div>
-        <div class="input_wrapper" id="br"><input type="number" name="bbrr" id="bbrr" value="0" onkeyup="changeBBRR()"></div>
-        <div class="input_wrapper" id="bl"><input type="number" name="bblr" id="bblr" value="0" onkeyup="changeBBLR()"></div>
+        <div class="input_wrapper" id="tl"><input type="number" name="btlr" id="btlr" value="0" onkeyup="changeborder()" onClick="this.select();"></div>
+        <div class="input_wrapper" id="tr"><input type="number" name="btrr" id="btrr" value="0" onkeyup="changeborder()" onClick="this.select();"></div>
+        <div class="input_wrapper" id="br"><input type="number" name="bbrr" id="bbrr" value="0" onkeyup="changeborder()" onClick="this.select();"></div>
+        <div class="input_wrapper" id="bl"><input type="number" name="bblr" id="bblr" value="0" onkeyup="changeborder()" onClick="this.select();"></div>
 
         <div id="box">
             <div id="textBox">
-                <p id="BTLRtxt">
-                            
-                </p>
-                <p id="BTRRtxt">
-                                
-                </p>
-                <p id="BBRRtxt">
-                                
-                </p>
-                <p id="BBLRtxt">
-                                
-                </p>
+                <textarea id="code" readonly="readonly">
+
+                </textarea>
             </div>
         </div>
+        <input type="button" value="Copy to Clipboard" id="button" onclick="copy()">
     </div>
 
     <script src="script.js"></script>
